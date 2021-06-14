@@ -1,0 +1,518 @@
+body {
+    background-color: #80ABD9;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+
+.container-navbar{
+    
+    position: absolute;
+    width: 100%;
+    background-color: rgba(26, 94, 158, 0.514);
+    z-index: 1;
+    
+   
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;   
+}
+
+.logo {
+    z-index: 1;
+    width: 20%;
+    animation: 2s ease-in;
+    animation-name: agrandar;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* transition: all 3s ; */
+}
+
+@keyframes agrandar {
+    from {
+        width: 17%;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+/* .logo:hover{
+    transform: scale(0.7, 1);
+    
+} */
+
+
+.nav-ul {
+    z-index: 1;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    ;
+    
+    
+}
+
+.nav-ul li {
+    list-style: none;
+    margin: 0px 8px;
+    color: rgb(0, 0, 0);
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    transition: all 1s;
+     
+}
+
+.nav-ul li:hover{
+    cursor: pointer;
+    color: white;
+    transform: translate(10px, 10px);
+    
+}
+
+.nav-ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.753);
+    
+}
+
+.nav-ul li a:hover{
+    cursor: pointer;
+    color: rgb(212, 210, 223);
+   
+    
+}
+.boton {
+    /* margin-left: 10%; */
+    margin-right: 5%;
+    background: none;
+    font-family: 'Staatliches';
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 1.5em;
+}
+.boton:hover {
+    cursor: pointer;
+    background-color:rgba(21, 170, 216, 0.692) ;
+}
+
+.boton a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.753)
+}
+.img {
+    width: 100%;
+}
+
+.container-portada { 
+    min-height: 70vh;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    /* display: flex; */
+  
+}
+
+
+hr {
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.quienes-somos {
+    /* width: 40%; */
+    /* height: 30%; */
+    display: flex;
+    /* margin-left: 30%; */
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: 'Staatliches';
+    font-size: 1.4em;
+    margin: 2%;
+    /* margin-top: 2%; */
+    
+
+}
+
+.quienes-somos h2 {
+    color: black;
+}
+
+.quienes-somos h2::before {
+    content:"/";
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    
+}
+
+.quienes-somos h2:hover::before {
+    opacity: 1;
+    
+}
+.quienes-somos h2::after {
+    content:"/";
+    color: white;
+    opacity: 0;
+    transition: all 1s;
+    
+}
+
+.quienes-somos h2:hover::after {
+    opacity: 1;
+    
+}
+
+.nuestras-actividades {
+    font-family: 'Staatliches';
+}
+
+.nuestras-actividades h2{
+    color: black;
+    margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.nuestras-actividades h2::before {
+    content:"/";
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    
+}
+
+.nuestras-actividades h2:hover::before {
+    opacity: 1;
+    
+}
+.nuestras-actividades h2::after {
+    content:"/";
+    color: white;
+    opacity: 0;
+    transition: all 1s;
+    
+}
+
+.nuestras-actividades h2:hover::after {
+    opacity: 1;
+    
+}
+.container-cards {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+ 
+}
+
+.card1 {
+    display: flex;
+    width: 25em;
+    height: 25em;  
+    background-image: url(./profe1.jpg);
+    background-size: 100%;
+    text-align: center;
+    flex-direction: column;
+    color: rgba(185, 209, 219, 0.452);
+    
+}
+
+.card1 h3{
+    color: black;
+    background-color: rgba(179, 241, 245, 0.87);
+}
+
+
+.card1 p {
+    transition: all 2s;
+    margin-top: 30%;
+    /* font-family: 'Carrois Gothic', sans-serif; */
+}
+.card1 p:hover {
+    cursor: pointer;
+    color: black;
+    transform: scale(1, 2); 
+    background-color: rgba(255, 235, 205, 0.541);
+    
+}
+
+.card2 {
+    display: flex;
+    width: 25em;
+    height: 25em;  
+    background-image: url(./libre.jpg);
+    background-size: 150%;
+    text-align: center;
+    flex-direction: column;
+    color: rgba(185, 209, 219, 0.452);
+}
+.card2 h3{
+    color: black;
+    background-color: rgba(179, 241, 245, 0.87);
+    ;
+}
+.card2 p {
+    transition: all 2s;
+    margin-top: 30%;
+    
+}
+.card2 p:hover {
+    cursor: pointer;
+    color: black;
+    transform: scale(1, 2);
+    background-color: rgba(255, 235, 205, 0.541);
+    
+}
+.card3 {
+    display: flex;
+    width: 25em;
+    height: 25em;  
+    background-image: url(./aquafitness.jpg);
+    background-size: 140%;
+    text-align: center;
+    flex-direction: column;
+    color: rgba(185, 209, 219, 0.452);
+}
+.card3 h3{
+    color: black;
+    background-color: rgba(179, 241, 245, 0.87);
+    
+}
+.card3 p {
+    transition: all 2s;
+    margin-top: 30%;
+    
+}
+.card3 p:hover {
+    cursor: pointer;
+    color: black;
+    transform: scale(1, 2);
+    background-color: rgba(255, 235, 205, 0.356);
+    
+}
+
+.card4 {
+    margin-top: 2%;
+    display: flex;
+    width: 25em;
+    height: 25em;  
+    background-image: url(./niños1.jpg);
+    background-size: 140%;
+    text-align: center;
+    flex-direction: column;
+    color: rgba(185, 209, 219, 0.288);
+}
+.card4 h3{
+    color: black;
+    background-color: rgba(179, 241, 245, 0.87);
+    
+}
+.card4 p {
+    transition: all 2s;
+    margin-top: 30%;
+    
+}
+.card4 p:hover {
+    cursor: pointer;
+    color: black;
+    transform: scale(1, 2);
+    background-color: rgba(211, 210, 209, 0.575);
+    
+    
+}
+
+.nuestras-instalaciones h2 {
+    color: black;
+}
+.nuestras-instalaciones h2::before {
+    content:"/";
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    
+}
+
+.nuestras-instalaciones h2:hover::before {
+    opacity: 1;
+    
+}
+.nuestras-instalaciones h2::after {
+    content:"/";
+    color: white;
+    opacity: 0;
+    transition: all 1s;
+    
+}
+
+.nuestras-instalaciones h2:hover::after {
+    opacity: 1;
+}
+
+.nuestras-instalaciones p {
+    font-size: 1.2em;
+}
+.container-instalaciones{
+    /* width: 1200px; */
+    width: 100%;
+    font-family: 'Staatliches';
+    text-align: center;
+      
+  }
+
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  .container-slider {
+      width: 80%;
+      margin-left: 10%;
+      padding: 0%;
+      
+  }
+  .slider{
+    position: relative;
+    width: 100%;
+    /* height: 400px; */
+    height: 30em;
+    /* margin-left: 15%; */
+  }
+  
+  .slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      
+  }
+  
+  .slider li img{
+    width: 100%;
+    height: 30em;
+    /* height: 400px; */
+    object-fit: cover;
+  }
+  
+  .slider li:first-child {
+      opacity: 1; 
+  }
+  
+  .slider li:target {
+      opacity: 1; 
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    border-radius: 100%;
+    font-family: 'Staatliches';
+  }
+
+  .container-contactanos {
+      width: 60%;
+      height: 60%;
+      background-color: #80abd991;
+      margin-left: 20%;
+      border-radius: 30%;
+      /* margin-bottom: 3%; */
+      margin-top: 3%;
+      font-family: 'Staatliches';
+      text-align: center;
+      color: rgb(6, 5, 7);
+    
+  }
+
+  .container-contactanos h2 {
+      margin-bottom: 2%;
+
+  }
+.contactanos {
+    background-image: url(./fondo-contactanos1.jpg);
+    background-size: 50%;
+}
+  label {
+    display: block;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+
+
+
+.pie-pagina {
+    color: black;
+    /* background-color: #185f75; */
+    /* background-color: white; */
+    margin: 0%;
+    font-family: 'Staatliches';
+    width: 100%;
+    height: 15%;  
+    display: flex;   
+    justify-content: space-between;       
+    
+    
+}
+
+.iconos-redes {
+    font-size: 2em; 
+    text-align: center;
+    margin-top: 1%;
+    
+}
+
+.iconos-redes a{
+    text-decoration: none;
+    color: black;
+}
+
+.face:hover {
+    cursor: pointer;
+    color: 3b5998;
+}
+
+.ig:hover {
+    cursor: pointer;
+    color: c13584;
+}
+
+.tw:hover {
+    cursor: pointer;
+    color: 1da1f2;
+}
+.iconos-tc {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    
+}
+.pie-pagina img {
+    width: 20%;
+    
+}

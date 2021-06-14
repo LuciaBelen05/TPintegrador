@@ -1,0 +1,92 @@
+
+body {
+    background-color: #80ABD9;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Staatliches', cursive;
+    
+    
+}
+
+.login {
+    width: 40%;
+    height:80%;
+    margin-left: 30%;
+    background-image: url(./fondo-contactanos11.jpg);
+    background-size: cover;
+    margin-top: 5%;
+    border-radius: 15%;
+    overflow: hidden;
+    
+}
+
+.login img {
+    width: 60%;
+    margin-left: 20%;
+    
+}
+
+.login label {
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.login button {
+    display: block;
+    margin-top: 10%;
+    font-family: 'Staatliches', cursive;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 40%;
+    font-size: 0.8em;
+
+}
+
+.login button:hover {
+    cursor: pointer;
+    background-color: teal;
+}
+.login h1 {
+    text-align: center;
+    font-size: 3em;
+    animation-duration: 2s;
+    animation-name: titulo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes titulo {
+    from {
+        margin-left: 40%;
+        width: 50%;
+    }
+    to {
+        margin-left: 10%;
+        width: 50%;
+    }
+    
+      
+}
+
+.container {
+   background-color: #5ff59b6c;
+   width: 50%;
+   height: 50%;
+   margin-left: 25%;
+   text-align: center;
+   border-radius: 15%;
+   font-size: 1.5em;
+   
+}
+
+.container h5 {
+    font-size: 0.6em;
+    margin-top: 15%;
+}
+
+.container h5:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
