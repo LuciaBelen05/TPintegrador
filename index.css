@@ -16,7 +16,7 @@ body {
    
 }
 
-@media (max-width: 425px) {
+@media (max-width: 574px) {
     .container-navbar {
         position: relative;
     }
@@ -55,7 +55,13 @@ body {
 
 @media (max-width: 927px) {
     .logo {
-        width: 5%;
+        width: 15%;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo {
+        animation: none;
     }
 }
 
@@ -164,6 +170,12 @@ hr {
     margin: 2%;
     /* margin-top: 2%; */
     
+
+}
+
+@media (max-width:425px) {
+    .quienes-somos { 
+        font-size: 1em;}
 
 }
 
@@ -475,6 +487,17 @@ hr {
     
   }
 
+  @media (max-width: 936px)
+  { .container-contactanos {
+      font-size: 0.6em;
+  }
+}
+ @media (max-width: 425px)
+ { .container-contactanos {
+     font-size: 0.3em;
+ }
+}
+
   .inputs {
       width: 100%;
       margin: 0%;
@@ -528,6 +551,12 @@ hr {
     
 }
 
+@media (max-width:425px) {
+    .iconos-redes {
+        font-size: 1.5em;
+    }
+}
+
 .iconos-redes a{
     text-decoration: none;
     color: black;
@@ -553,6 +582,12 @@ hr {
     margin-top: 1%;
     margin-left: 2%;
     
+}
+
+@media (max-width:425px) {
+    .iconos-tc {
+        font-size: 1.5em;
+    }
 }
 .pie-pagina img {
     width: 20%;
