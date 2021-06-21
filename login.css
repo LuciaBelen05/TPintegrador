@@ -21,7 +21,13 @@ body {
     
 }
 
-@media (max-width:1024px){
+@media (min-width:320px) and (max-width:579px) {
+    .login {
+        width: 100%;
+    }
+}
+
+@media (min-width:580px) and (max-width:767px) {
     .login {
         width: 60%;
     }
@@ -40,18 +46,20 @@ body {
 }
 
 .login button {
-    display: block;
+    display: flex;
     margin-top: 10%;
     font-family: 'Staatliches', cursive;
     background-color: rgba(255, 255, 255, 0);
-    margin-left: 40%;
+    margin-left: 33%;
     font-size: 0.8em;
+    justify-content: center;  
 
 }
 
 .login button:hover {
     cursor: pointer;
     background-color: teal;
+    
 }
 .login h1 {
     text-align: center;
@@ -85,13 +93,19 @@ body {
    background-color: #5ff59b6c;
    width: 50%;
    height: 50%;
-   margin-left: 25%;
+   margin-left: 20%;
    text-align: center;
    border-radius: 15%;
-   font-size: 1.5em;
-   
+   font-size: 1.5em; 
 }
 
+
+@media (max-width:610px) {
+    .container {
+        width: 60%;
+        height: 65%;
+    }
+}
 .container h5 {
     font-size: 0.6em;
     margin-top: 15%;
